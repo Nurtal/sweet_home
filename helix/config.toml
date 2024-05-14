@@ -1,0 +1,37 @@
+theme="onedark"
+
+[editor]
+true-color=true
+cursorline=true
+mouse= true
+bufferline="multiple"
+
+[keys.insert]
+C-c="normal_mode"
+
+[keys.normal]
+C-c="no_op"
+# C-d=["move_prev_word_start", "move_next_word_start","search_selection", "select_mode"]
+C-d = ["extend_line_below", "yank", "goto_line_start", "paste_before","collapse_selection"]
+S-tab=":buffer-next"
+C-s=":write"
+C-q = ":buffer-close"
+C-up=["delete_selection", "move_visual_line_up", "paste_before"]
+C-down=["delete_selection", "move_visual_line_down", "paste_before"]
+C-space=["save_selection"]
+C-x="toggle_comments"  
+
+[editor.cursor-shape]
+insert="bar"
+normal="block"
+select="underline"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center=["file-name", "version-control"]
+mode.normal="NORMAL"
+mode.insert="INSERT"
+mode.select="SELECT"
+
+[editor.lsp]
+enable = true
