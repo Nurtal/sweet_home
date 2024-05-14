@@ -19,7 +19,7 @@ C-q = ":buffer-close"
 C-up=["delete_selection", "move_visual_line_up", "paste_before"]
 C-down=["delete_selection", "move_visual_line_down", "paste_before"]
 C-space=["save_selection"]
-C-x="toggle_comments"  
+# C-x="toggle_comments"  
 
 [editor.cursor-shape]
 insert="bar"
@@ -35,3 +35,6 @@ mode.select="SELECT"
 
 [editor.lsp]
 enable = true
+
+[keys.normal.space]
+"/" = "toggle_comments"
